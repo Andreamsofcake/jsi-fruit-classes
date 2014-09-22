@@ -32,7 +32,7 @@ describe('Banana', function() {
       expect(this.banana.isPeeled()).to.be.true;
     });
 
-    it.skip('can be eaten', function() {
+    it('can be eaten', function() {
       var safe = this.banana.prepareForEating();
       expect(this.banana.isPeeled()).to.be.true;
       expect(safe).to.be.true;
