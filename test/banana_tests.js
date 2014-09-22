@@ -27,6 +27,11 @@ describe('Banana', function() {
       expect(this.banana.isPeeled()).to.be.false;
     });
 
+    it.skip('can be peeled', function() {
+      this.banana.peel();
+      expect(this.banana.isPeeled()).to.be.true;
+    });
+
     it.skip('can be eaten', function() {
       var safe = this.banana.prepareForEating();
       expect(this.banana.isPeeled()).to.be.true;
