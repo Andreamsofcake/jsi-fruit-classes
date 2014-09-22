@@ -37,5 +37,12 @@ describe('Banana', function() {
       expect(this.banana.isPeeled()).to.be.true;
       expect(safe).to.be.true;
     });
+
+    it('cannot be eaten if rotten', function() {
+      this.banana.setRotten(true);
+      var safe = this.banana.prepareForEating();
+      expect(this.banana.isPeeled()).to.be.false;
+      expect(safe).to.be.false;
+    });
   });
 });
