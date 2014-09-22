@@ -23,6 +23,10 @@ describe('Banana', function() {
       expect(this.banana.color()).to.eql('yellow');
     });
 
+    it('is not peeled', function() {
+      expect(this.banana.isPeeled()).to.be.false;
+    });
+
     it.skip('can be eaten', function() {
       var safe = this.banana.prepareForEating();
       expect(this.banana.isPeeled()).to.be.true;
